@@ -19,6 +19,7 @@ import VerifyEmail from './pages/verifyEmail'
 import PasswordReset from './pages/passwordReset'
 import SendPasswordResetMail from './pages/sendPassResetMail'
 import SignUpForm from './components/ReactHookForm'
+import Homepage from './pages/homepage'
 
 const App = () => {
   return (
