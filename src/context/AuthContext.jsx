@@ -34,10 +34,10 @@ const AuthProvider = ({ children }) => {
             console.log(data);
 
             if (!response.ok && data.status === "error") {
-                toast.warning(`${data.message}`)
+                // toast.warning(`${data.message}`)
                 return
             }
-            toast.success("You have successfully signed up, a verification mail has been sent to you.")
+            // toast.success("You have successfully signed up, a verification mail has been sent to you.")
             navigate("/signin")
 
         } catch (error) {
@@ -108,7 +108,7 @@ const AuthProvider = ({ children }) => {
             })
             const data = await res.json()
             if (!res.ok || data.status === "error") {
-                toast.warning(data.message);
+                // toast.warning(data.message);
                 return
             }
             console.log(data);
