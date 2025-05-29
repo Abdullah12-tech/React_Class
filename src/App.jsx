@@ -19,7 +19,6 @@ import VerifyEmail from './pages/verifyEmail'
 import PasswordReset from './pages/passwordReset'
 import SendPasswordResetMail from './pages/sendPassResetMail'
 import SignUpForm from './components/ReactHookForm'
-import Homepage from './pages/homepage'
 
 const App = () => {
   return (
@@ -29,7 +28,6 @@ const App = () => {
           <ProductProvider>
             <Navbar />
             <Routes>
-              <Route path='/' element={<Homepage />} />
               <Route path='/products' element={<Product />} />
               <Route path='/products/:id' element={<SingleProduct />} />
               <Route path='/contact' element={<Contact />} />
